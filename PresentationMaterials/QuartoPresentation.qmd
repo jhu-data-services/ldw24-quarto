@@ -1,0 +1,89 @@
+---
+title: "Quarto for Reproducible Research"
+author: JHU Data Services - Lubov McKone
+date: Feb 13 2024
+format: 
+  revealjs:
+    auto-stretch: false
+editor: visual
+---
+
+## Today, you will learn:
+
+-   How to create basic Quarto documents in RStudio
+-   How to use Quarto to make your research more reproducible
+-   Where to learn more about Quarto
+
+## You will not learn:
+
+-   How to write R code
+
+## What is Quarto?
+
+::: {style="font-size: 75%;"}
+-   An **authoring framework** for data science.
+-   A tool that allows you to create a **variety of output documents** (HTML, PDF, MS Word, MS PowerPoint, and more!)from a combination of **text and code.**
+-   A great way to **document** your background, analysis, and conclusions.
+-   A useful format for **collaboration** and code review.
+
+![](img/Quarto_outputs.png){width="50%" fig-align="center"}
+:::
+
+::: notes
+# 
+:::
+
+## Example: Quarto for [reports](https://github.com/jadeynryan/2023_posit-parameterized-quarto)
+
+::: columns
+::: {.column width="50%"}
+![](img/Quarto_report_sample1.png){justify-content="center"}
+:::
+
+::: {.column width="50%"}
+![](img/Quarto_report_sample2.png)
+:::
+:::
+
+## Example: Quarto for [manuscripts](https://raw.githubusercontent.com/ajnafa/linked-fate-paper/main/manuscript/latex/Stronger-Together-Draft-TeX.pdf)
+
+::: columns
+::: {.column width="50%"}
+![](img/Quarto_manuscript_sample.png)
+:::
+
+::: {.column width="50%"}
+![](img/Quarto_manuscript_sample2.png)
+:::
+:::
+
+## How can I use Quarto?
+
+-   Quarto can be integrated with **RStudio**, **Jupyter Notebooks**, and **Visual Studio** to turn your analysis into shareable documents.
+-   Quarto can also be used as a standalone tool via the command line **(Quarto CLI)**
+
+![](img/Quarto_rendering.png){width="60%" fig-align="center"}
+
+## Today: Quarto in RStudio
+
+-   Quarto comes pre-installed with RStudio
+-   Quarto grew out of **RMarkdown**, and was developed by **Posit**, the developers of RStudio
+-   Similar syntax to rmd, but with more consistent implementations of spinoffs such as bookdown, blogdown, xaringen, and even Shiny.
+
+![](img/Quarto_penguins.png){width="40%" fig-align="right"}
+
+## In Review
+
+-   Add headings and text using Markdown or the visual editor.
+-   Add code chunks surrounded by triple backticks. Designate the language in curly braces: ```` ```{r} your_code_here ``` ```` or use the visual editor.
+-   Add options to your code chunks to hide or show code or results using `#|` .i.e. `#| echo:false` will hide code from your report.
+-   Add inline code values using single backticks i.e. `` `r Sys.Date()` ``
+-   Add citations from crossref, DataCite, or by DOI
+
+## Additional Resources
+
+-   [Quarto is a Next Generation R Markdown](https://bookdown.org/pdr_higgins/rmrwr/quarto-is-a-next-generation-rmarkdown.html#quarto-is-a-next-generation-rmarkdown), Reproducible Medical Research with R, Peter D.R. Higgins.
+
+-   [Quarto](https://r4ds.hadley.nz/quarto), R for Data Science (2e), Hadley Wickham, Mine Cetinkaya-Rundel, and Garrett Grolemund.
+
+-   [Quarto cheatsheet](https://rstudio.github.io/cheatsheets/quarto.pdf)

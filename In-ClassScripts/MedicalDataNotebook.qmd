@@ -1,0 +1,43 @@
+---
+title: "MedicalDataNotebook"
+format: html
+editor: visual
+bibliography: references.bib
+code-annotations: hover
+---
+
+## Introduction
+
+This is a notebook for the Scurvy Lab at JHU to share code and results.
+
+## Results
+
+```{r}
+#| echo: false
+#| warning: false
+
+library(tidyverse)
+library(medicaldata)
+library(scales)
+library(gt)
+
+scurvy <- medicaldata::scurvy
+
+```
+
+```{r}
+scurvy_treatments <- scurvy |> 
+  dplyr::group_by(treatment) |>
+  dplyr::summarise(success_rate = scales::percent(sum(fit_for_duty_d6 == '1_yes')/n())) #<1>
+
+scurvy_treatments |>
+  gt()
+```
+
+1.  Calculate the percentage of cases that were cured by each treatment.
+
+## Discussion
+
+In this study, treating scurvy with citrus has a success rate of `r scurvy_treatments |> filter(treatment == 'citrus') |> select(success_rate)`.
+
+Data for this study come from [@lindst1953]
