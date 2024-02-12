@@ -18,9 +18,10 @@ Before the class, follow the installation instructions to download all required 
 
 
 ## Description of Files
-- Data: This folder contains raw data files to be used during hands-on activities in the workshop
 - In-ClassScripts: This folder contains code files you will need for the workshop:
-- PresentationMaterials: This folder contains PowerPoint slides and other presentation materials used in the workshop
+	- MedicalDataNotebook.qmd: the final version of the Quarto document created in the demo
+	- MedicalDataNotebook.html: The HTML report rendered from the Quarto document
+- PresentationMaterials: This folder contains slides and other presentation materials used in the workshop
 - Resources: This folder contains cheatsheets to assist you during the workshop and links to external sources for you to continue your learning
 
 
