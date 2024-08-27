@@ -35,4 +35,4 @@ The images, external resources, and cheatsheets linked in this repository may ha
 
 ## Citation
 Please cite this material as:    
-Johns Hopkins University Data Services. February 13, 2024. Quarto for Reproducible Research. https://github.com/jhu-data-services/reproducible-research-quarto. 
+Johns Hopkins University Data Services. February 13, 2024. Quarto for Reproducible Research. https://github.com/jhu-data-services/ldw24-quarto. 
